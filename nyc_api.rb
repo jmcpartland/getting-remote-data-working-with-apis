@@ -1,4 +1,5 @@
-require 'net/http'
+ require 'pry'
+ require 'net/http'
  require 'open-uri'
  require 'json'
  
@@ -18,8 +19,8 @@ require 'net/http'
       program["agency"]
     end
   end
-
+  binding.pry
 end
 
  programs = GetPrograms.new.get_programs
- puts programs
+ puts programsprograms = GetPrograms.new
